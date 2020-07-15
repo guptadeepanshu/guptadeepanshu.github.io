@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Snippets on Deepanshu&#39;s Blog</title>
-    <link>https://guptadeepanshu.github.io/snippets/</link>
+    <link>https://deepanshu.dev/snippets/</link>
     <description>Recent content in Snippets on Deepanshu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://guptadeepanshu.github.io/snippets/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://deepanshu.dev/snippets/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>First snippet</title>
-      <link>https://guptadeepanshu.github.io/snippets/first/</link>
+      <link>https://deepanshu.dev/snippets/first/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/snippets/first/</guid>
+      <guid>https://deepanshu.dev/snippets/first/</guid>
       <description>This content is in snippets/first/index.md
 pwd </description>
     </item>
     
     <item>
       <title>Second snippet</title>
-      <link>https://guptadeepanshu.github.io/snippets/second/</link>
+      <link>https://deepanshu.dev/snippets/second/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/snippets/second/</guid>
+      <guid>https://deepanshu.dev/snippets/second/</guid>
       <description>This content is in snippets/second/index.md
 ls -la </description>
     </item>

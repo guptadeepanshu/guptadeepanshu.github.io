@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Deepanshu&#39;s Blog</title>
-    <link>https://guptadeepanshu.github.io/series/</link>
+    <link>https://deepanshu.dev/series/</link>
     <description>Recent content in Series on Deepanshu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 10 Jul 2020 10:59:09 +0530</lastBuildDate>
     
-	<atom:link href="https://guptadeepanshu.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://deepanshu.dev/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gerrit</title>
-      <link>https://guptadeepanshu.github.io/series/gerrit/</link>
+      <link>https://deepanshu.dev/series/gerrit/</link>
       <pubDate>Fri, 10 Jul 2020 10:59:09 +0530</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/series/gerrit/</guid>
+      <guid>https://deepanshu.dev/series/gerrit/</guid>
       <description></description>
     </item>
     

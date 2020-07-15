@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deepanshu&#39;s Blog</title>
-    <link>https://guptadeepanshu.github.io/</link>
+    <link>https://deepanshu.dev/</link>
     <description>Recent content on Deepanshu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 10 Jul 2020 10:59:09 +0530</lastBuildDate>
     
-	<atom:link href="https://guptadeepanshu.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://deepanshu.dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A better code search experience</title>
-      <link>https://guptadeepanshu.github.io/2020/07/gerrit-code-search/</link>
+      <link>https://deepanshu.dev/2020/07/gerrit-code-search/</link>
       <pubDate>Fri, 10 Jul 2020 10:59:09 +0530</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/2020/07/gerrit-code-search/</guid>
+      <guid>https://deepanshu.dev/2020/07/gerrit-code-search/</guid>
       <description>Photo by Annie Spratt from Unsplash
   Gerrit is a great code review tool. I find it much better than GitHub. Many don&amp;rsquo;t like Gerrit because they&amp;rsquo;ve only ever experienced it with AOSP and find it hard to work with the repo tool, not necessarily Gerrit itself.
 Gerrit has a great and well documented API surface. It has enabled a large ecosystem of plugins with plenty of integrations with third parties.</description>
@@ -24,66 +24,66 @@ Gerrit has a great and well documented API surface. It has enabled a large ecosy
     
     <item>
       <title>To face insurmountable work, smile (An interview)</title>
-      <link>https://guptadeepanshu.github.io/2020/04/vaibhav-interview/</link>
+      <link>https://deepanshu.dev/2020/04/vaibhav-interview/</link>
       <pubDate>Tue, 07 Apr 2020 10:59:09 +0530</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/2020/04/vaibhav-interview/</guid>
+      <guid>https://deepanshu.dev/2020/04/vaibhav-interview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The stumbling blocks involved with upgrading Gerrit</title>
-      <link>https://guptadeepanshu.github.io/2019/11/gerrit-upgrade/</link>
+      <link>https://deepanshu.dev/2019/11/gerrit-upgrade/</link>
       <pubDate>Tue, 26 Nov 2019 12:58:39 +0530</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/2019/11/gerrit-upgrade/</guid>
+      <guid>https://deepanshu.dev/2019/11/gerrit-upgrade/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About Deepanshu</title>
-      <link>https://guptadeepanshu.github.io/about/</link>
+      <link>https://deepanshu.dev/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/about/</guid>
+      <guid>https://deepanshu.dev/about/</guid>
       <description>I am an Engineering Manager at Zendrive, leading the Android and iOS mobile teams. We work on analyzing driving behavior on the roads using sensors on the phone. Hopefully, by revealing peoples&amp;rsquo;s driving patterns, we can make roads safer and save some lives. It&amp;rsquo;s pretty cool, I know.
 I am also an Android Engineer. I started my professional career with Google, working with the Android Studio team. After working for about 4 years there, I started missing India.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://guptadeepanshu.github.io/contact/</link>
+      <link>https://deepanshu.dev/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/contact/</guid>
+      <guid>https://deepanshu.dev/contact/</guid>
       <description>Shoot me an email: contact@deepanshu.dev</description>
     </item>
     
     <item>
       <title>First snippet</title>
-      <link>https://guptadeepanshu.github.io/snippets/first/</link>
+      <link>https://deepanshu.dev/snippets/first/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/snippets/first/</guid>
+      <guid>https://deepanshu.dev/snippets/first/</guid>
       <description>This content is in snippets/first/index.md
 pwd </description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://guptadeepanshu.github.io/projects/</link>
+      <link>https://deepanshu.dev/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/projects/</guid>
+      <guid>https://deepanshu.dev/projects/</guid>
       <description>Nothing to see here&amp;hellip; Move along!</description>
     </item>
     
     <item>
       <title>Second snippet</title>
-      <link>https://guptadeepanshu.github.io/snippets/second/</link>
+      <link>https://deepanshu.dev/snippets/second/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/snippets/second/</guid>
+      <guid>https://deepanshu.dev/snippets/second/</guid>
       <description>This content is in snippets/second/index.md
 ls -la </description>
     </item>
