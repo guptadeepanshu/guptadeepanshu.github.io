@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on Deepanshu&#39;s Blog</title>
+    <link>https://guptadeepanshu.github.io/tags/tech/</link>
+    <description>Recent content in tech on Deepanshu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 Jul 2020 10:59:09 +0530</lastBuildDate>
+    
+	<atom:link href="https://guptadeepanshu.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A better code search experience</title>
+      <link>https://guptadeepanshu.github.io/2020/07/gerrit-code-search/</link>
+      <pubDate>Fri, 10 Jul 2020 10:59:09 +0530</pubDate>
+      
+      <guid>https://guptadeepanshu.github.io/2020/07/gerrit-code-search/</guid>
+      <description>Photo by Annie Spratt from Unsplash
+  Gerrit is a great code review tool. I find it much better than GitHub. Many don&amp;rsquo;t like Gerrit because they&amp;rsquo;ve only ever experienced it with AOSP and find it hard to work with the repo tool, not necessarily Gerrit itself.
+Gerrit has a great and well documented API surface. It has enabled a large ecosystem of plugins with plenty of integrations with third parties.</description>
+    </item>
+    
+    <item>
+      <title>The stumbling blocks involved with upgrading Gerrit</title>
+      <link>https://guptadeepanshu.github.io/2019/11/gerrit-upgrade/</link>
+      <pubDate>Tue, 26 Nov 2019 12:58:39 +0530</pubDate>
+      
+      <guid>https://guptadeepanshu.github.io/2019/11/gerrit-upgrade/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

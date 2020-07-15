@@ -1,173 +1,197 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
   <head>
-  <title>Deepanshu&#39;s Blog</title>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta name="description" content="My awesome blog" />
-  <meta name="author" content="Deepanshu" />
-  <meta name="generator" content="mero theme by Darshan in Hugo 0.73.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
 
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Overlock|Roboto+Mono&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="/css/mero.css" />
+    <meta name="author" content="Deepanshu Gupta">
+    <meta name="description" content="Deepanshu&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
 
-  <script src="/js/mero.js"></script>
-</head>
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
 
-  <body class="bg-dark text-white m-auto" style="width:95%; max-width: 1024px;">
-    <div class="wrapper">
-      <nav class="mb-3 mt-3 ml-1">
-  <div class="d-flex flex-row">
-    <div
-      class="menu-item border border-warning bg-dark p-2"
-      style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"
-    >
-      <a href="/"><span>Home</span> </a>
-    </div>
-    <div class="menu-item dropdown border border-warning bg-dark p-2">
-      <span class="dropbtn text-warning" onclick="toggleMenu(this)"
-        >Sections <i class="fas fa-angle-down"></i
-      ></span>
-      <div
-        class="dropdown-content p-2 bg-dark2 mt-2 rounded w-auto mt-1 d-none"
-        style="min-width: 200px;"
-      >
-        <ul class="list-unstyled">
-          
-          
-          
-          <li class="pt-2">
-            <a href="https://guptadeepanshu.github.io/posts/">Posts</a>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Deepanshu&#39;s Blog"/>
+<meta name="twitter:description" content="Deepanshu&#39;s personal website"/>
+
+    <meta property="og:title" content="Deepanshu&#39;s Blog" />
+<meta property="og:description" content="Deepanshu&#39;s personal website" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://guptadeepanshu.github.io/" />
+<meta property="og:updated_time" content="2020-07-10T10:59:09+05:30" />
+
+
+    
+      <base href="https://guptadeepanshu.github.io/">
+    
+    <title>Deepanshu&#39;s Blog</title>
+
+    
+      <link rel="canonical" href="https://guptadeepanshu.github.io/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://guptadeepanshu.github.io/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://guptadeepanshu.github.io/css/coder-dark.min.e78e80fc3a585a4d1c8fc7f58623b6ff852411e38431a9cd1792877ecaa160f6.css" integrity="sha256-546A/DpYWk0cj8f1hiO2/4UkEeOEManNF5KHfsqhYPY=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://guptadeepanshu.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://guptadeepanshu.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="alternate" type="application/rss+xml" href="https://guptadeepanshu.github.io/index.xml" title="Deepanshu's Blog" />
+    <meta name="generator" content="Hugo 0.73.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-dark"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://guptadeepanshu.github.io/">
+      Deepanshu&#39;s Blog
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://guptadeepanshu.github.io/about/">About</a>
           </li>
-          
-          
-          
-          
-          
-          
-          
-          
-        </ul>
-      </div>
-    </div>
-    <div class="menu-item border border-warning bg-dark p-2">
-      <a
-        href="/alltaxa/"
-        ><span>Taxa</span>
-      </a>
-    </div>
-    <div class="menu-item border border-warning bg-dark p-2"
-    style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
-      <a
-        href="/archive/"
-        ><span>Archive</span>
-      </a>
-    </div>
-  </div>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://guptadeepanshu.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://guptadeepanshu.github.io/contact/">Contact me</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
 </nav>
 
-      <main>
+
+      <div class="content">
         
-<div class="d-flex flex-row flex-wrap justify-content-around">
-  <div class="mt-4 home-flex-item" style="width: calc(35% - 20px); min-width: 250px;">
-    <img class="w-100 rounded mb-2" src="/images/main.jpeg" />
-<div class="d-flex justify-content-center mt-2">
-  
-  <div class="ml-1 mr-1" style="width: 40px; height: 40px;">
-    <a href="https://www.linkedin.com/in/androiddeepanshu/">
-      <i class="social-icon fab fa-linkedin-in"></i>
-    </a>
+  <section class="container centered">
+  <div class="about">
+    
+      
+        <div class="avatar"><img src="https://guptadeepanshu.github.io/images/avatar.jpg" alt="avatar"></div>
+      
+    
+    
+    <h1>Deepanshu Gupta</h1>
+    <h2>Mobile Engineering Manager, Android Developer</h2>
+    
+    <ul>
+      
+        
+          <li>
+            <a href="https://github.com/guptadeepanshu/" aria-label="Github"   >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://www.linkedin.com/in/androiddeepanshu/" aria-label="LinkedIn"   >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/deepanshu-zendrive/" aria-label="Github"   >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+      
+    </ul>
+    
   </div>
-  
-  <div class="ml-1 mr-1" style="width: 40px; height: 40px;">
-    <a href="https://github.com/guptadeepanshu/">
-      <i class="social-icon fab fa-github"></i>
-    </a>
-  </div>
-  
-  <div class="ml-1 mr-1" style="width: 40px; height: 40px;">
-    <a href="https://github.com/deepanshu-zendrive/">
-      <i class="social-icon fab fa-github"></i>
-    </a>
-  </div>
-  
-</div>
+</section>
 
-  </div>
 
-  <div class="home-flex-item mt-4" style="width: calc(65% - 20px);">
-    <div class="position-relative border rounded p-2" style="margin-bottom: 40px;">
-      <h4
-  class="pl-2 pr-2 bg-dark rounded border"
-  style="position: absolute; top: -1rem; right: 0.5em;"
->
-  <b>About</b>
-</h4>
-<h1>I am Deepanshu.</h1>
-<p><p><strong>This website</strong> is my blog. I&rsquo;m new to this. If you find any mistakes please point them out to me and I&rsquo;d be happy to improve. I&rsquo;ll try to post as often as I can.</p>
-<p>I am an Engineering Manager at Zendrive, leading the Android and iOS mobile teams. We work on analyzing driving behavior on the roads using sensors on the phone. It&rsquo;s pretty cool, I know.</p>
-<p>I was (am?) an Android Engineer. I started my professional career with Google, working with the Android Studio team. When I started missing India, After working for about 4 years there, I started missing India. I left that job and came back. Here, I hope to talk about my life, work, or anything else that takes my fancy.</p>
-</p>
+      </div>
 
-    </div>
-    <div class="home-flex-item position-relative p-2 border rounded text-center">
-      <h4
-  class="pl-2 pr-2 bg-dark rounded border"
-  style="position: absolute; top: -0.7em; left: 0.5em;"
->
-  <b>Recent</b>
-</h4>
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+        2020
+         Deepanshu Gupta 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
 
-<div class="pt-2">
-  
-  
-    <a class="ml-1 list-entry-link text-uppercase" href="https://link.medium.com/5oLp5VL5Z7" target="_blank">
-      To face insurmountable work, smile.
-    </a>
-  
-  <p class="ml-2 mb-1">An interview I gave to a dear friend, Vaibhav</p>
-  
-  
-    <a class="ml-1 list-entry-link text-uppercase" href="https://medium.com/zendrive-tech/the-stumbling-blocks-of-upgrading-gerrit-e644a2c3ef72?source=friends_link&amp;sk=9c7e1d595e787b341f840bb7102f3da0" target="_blank">
-      Gerrit upgrade
-    </a>
-  
-  <p class="ml-2 mb-1">The Stumbling Blocks Involved with Upgrading Gerrit</p>
-  
-  <p class="text-right m-0">
-    <a href="/archive/">See All</a>
-  </p>
-</div>
+    </main>
 
-    </div>
-  </div>
-</div>
+    
 
-      </main>
-    </div>
-    <footer>
-  <div class="w-50 bg-danger ml-auto mr-auto mt-4" style="height: 2px;"></div>
-  <div class="mt-4 mb-2" style="font-size: 0.9em;">
-    <p class="text-center">
-      &copy; 2020 Deepanshu |
-      <a href="https://github.com/darshanbaral/mero.git">mero</a> theme by
-      <a href="https://www.darshanbaral.com">Darshan</a>
-    </p>
-  </div>
-</footer>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-172509427-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    
 
   </body>
+
 </html>

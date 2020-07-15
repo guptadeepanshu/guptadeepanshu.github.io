@@ -5,32 +5,39 @@
     <link>https://guptadeepanshu.github.io/posts/</link>
     <description>Recent content in Posts on Deepanshu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2020 10:59:09 +0530</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 Jul 2020 10:59:09 +0530</lastBuildDate>
     
 	<atom:link href="https://guptadeepanshu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>To face insurmountable work, smile.</title>
-      <link>https://guptadeepanshu.github.io/posts/vaibhav-interview/</link>
-      <pubDate>Tue, 07 Apr 2020 10:59:09 +0530</pubDate>
+      <title>A better code search experience</title>
+      <link>https://guptadeepanshu.github.io/2020/07/gerrit-code-search/</link>
+      <pubDate>Fri, 10 Jul 2020 10:59:09 +0530</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/posts/vaibhav-interview/</guid>
-      <description>The original article is available here. Please refer to that for a better reading experience.
-Hi, this is Season 3 of Everyday People. This week, Mr. Deepanshu Gupta. (Interview conducted: 28 Jan — 2 Feb, 2020)
- Who are you, what do you do, and what is your current side project?  I am a software engineer recently turned manager, leading the Android and iOS teams at Zendrive. The main focus of the job has changed from making the product succeed to making every single one of the engineers reporting to me succeed.</description>
+      <guid>https://guptadeepanshu.github.io/2020/07/gerrit-code-search/</guid>
+      <description>Photo by Annie Spratt from Unsplash
+  Gerrit is a great code review tool. I find it much better than GitHub. Many don&amp;rsquo;t like Gerrit because they&amp;rsquo;ve only ever experienced it with AOSP and find it hard to work with the repo tool, not necessarily Gerrit itself.
+Gerrit has a great and well documented API surface. It has enabled a large ecosystem of plugins with plenty of integrations with third parties.</description>
     </item>
     
     <item>
-      <title>Gerrit upgrade</title>
-      <link>https://guptadeepanshu.github.io/posts/gerrit-upgrade216/</link>
+      <title>To face insurmountable work, smile (An interview)</title>
+      <link>https://guptadeepanshu.github.io/2020/04/vaibhav-interview/</link>
+      <pubDate>Tue, 07 Apr 2020 10:59:09 +0530</pubDate>
+      
+      <guid>https://guptadeepanshu.github.io/2020/04/vaibhav-interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The stumbling blocks involved with upgrading Gerrit</title>
+      <link>https://guptadeepanshu.github.io/2019/11/gerrit-upgrade/</link>
       <pubDate>Tue, 26 Nov 2019 12:58:39 +0530</pubDate>
       
-      <guid>https://guptadeepanshu.github.io/posts/gerrit-upgrade216/</guid>
-      <description>The original article is available here. Please refer to that for a better reading experience.
-The Stumbling Blocks Involved with Upgrading Gerrit When a plugin is no longer friendly with a piece of software, the results can range from frustrating to disastrous — especially when the problem happens on a Friday.
-Gerrit is our tool of choice for code review. It fits our needs, and we believe it gives us advantages other tools can’t.</description>
+      <guid>https://guptadeepanshu.github.io/2019/11/gerrit-upgrade/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Deepanshu Gupta">
+    <meta name="description" content="Photo by Annie Spratt from Unsplash
+  Gerrit is a great code review tool. I find it much better than GitHub. Many don&rsquo;t like Gerrit because they&rsquo;ve only ever experienced it with AOSP and find it hard to work with the repo tool, not necessarily Gerrit itself.
+Gerrit has a great and well documented API surface. It has enabled a large ecosystem of plugins with plenty of integrations with third parties.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A better code search experience"/>
+<meta name="twitter:description" content="Photo by Annie Spratt from Unsplash
+  Gerrit is a great code review tool. I find it much better than GitHub. Many don&rsquo;t like Gerrit because they&rsquo;ve only ever experienced it with AOSP and find it hard to work with the repo tool, not necessarily Gerrit itself.
+Gerrit has a great and well documented API surface. It has enabled a large ecosystem of plugins with plenty of integrations with third parties."/>
+
+    <meta property="og:title" content="A better code search experience" />
+<meta property="og:description" content="Photo by Annie Spratt from Unsplash
+  Gerrit is a great code review tool. I find it much better than GitHub. Many don&rsquo;t like Gerrit because they&rsquo;ve only ever experienced it with AOSP and find it hard to work with the repo tool, not necessarily Gerrit itself.
+Gerrit has a great and well documented API surface. It has enabled a large ecosystem of plugins with plenty of integrations with third parties." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guptadeepanshu.github.io/2020/07/gerrit-code-search/" />
+<meta property="article:published_time" content="2020-07-10T10:59:09+05:30" />
+<meta property="article:modified_time" content="2020-07-10T10:59:09+05:30" />
+
+
+
+    
+      <base href="https://guptadeepanshu.github.io/2020/07/gerrit-code-search/">
+    
+    <title>
+  A better code search experience · Deepanshu&#39;s Blog
+</title>
+
+    
+      <link rel="canonical" href="https://guptadeepanshu.github.io/2020/07/gerrit-code-search/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://guptadeepanshu.github.io/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://guptadeepanshu.github.io/css/coder-dark.min.e78e80fc3a585a4d1c8fc7f58623b6ff852411e38431a9cd1792877ecaa160f6.css" integrity="sha256-546A/DpYWk0cj8f1hiO2/4UkEeOEManNF5KHfsqhYPY=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://guptadeepanshu.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://guptadeepanshu.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.73.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-dark"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://guptadeepanshu.github.io/">
+      Deepanshu&#39;s Blog
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://guptadeepanshu.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://guptadeepanshu.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://guptadeepanshu.github.io/contact/">Contact me</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">A better code search experience</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-07-10T10:59:09&#43;05:30'>
+                July 10, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              5-minute read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://guptadeepanshu.github.io/tags/gerrit/">gerrit</a>
+      <span class="separator">•</span>
+    <a href="https://guptadeepanshu.github.io/tags/tech/">tech</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <figure>
+    <img src="header.jpg"
+         alt="Colleagues working together"/> <figcaption>
+            <p>Photo by Annie Spratt from <a href="https://unsplash.com/photos/QckxruozjRg">Unsplash</a></p>
+        </figcaption>
+</figure>
+
+<p>Gerrit is a great code review tool. I find it much better than GitHub. Many
+don&rsquo;t like Gerrit because they&rsquo;ve only ever experienced it with AOSP and find it
+hard to work with the <a href="https://source.android.com/setup/develop/repo">repo tool</a>,
+not necessarily Gerrit itself.</p>
+<p>Gerrit has a great and well documented API surface. It has enabled a large
+ecosystem of plugins with plenty of integrations with third parties.
+Unfortunately, the repository browser that comes with Gerrit
+(<a href="https://gerrit.googlesource.com/gitiles/">gitiles</a>) leaves a lot to be
+desired.</p>
+<p>The biggest advantage that gitiles has is that it follows the ACLs set in gerrit
+exactly. So, if you have something complex setup there, there aren&rsquo;t many
+alternatives out there. However, Google Cloud Source Repository can be very
+useful if you have a simple setup.</p>
+<p>I recently came across an excellent
+<a href="https://alexsaveau.dev/blog/tips/search/github/2020/06/17/get-your-own-personal-code-search/">post</a>
+by <a href="https://alexsaveau.dev/">Alex Saveau</a> about using Google Code Search to
+improve the search provided by GitHub. This seemed like an excellent tool for us
+at Zendrive, especially when gitiles provides no search. I quickly got an
+approval to experimenting with this from our security expert Chandrakanth. Code
+is sensitive and I didn&rsquo;t want to take any chances in leaking ours.</p>
+<figure>
+    <img src="comparison.png"
+         alt="Gitiles/Goole Code Search Comparison"/> <figcaption>
+            <p>Gitiles (left) vs Google Code Search (right)</p>
+        </figcaption>
+</figure>
+
+<h2 id="setting-up-google-code-search">Setting up Google Code Search</h2>
+<p>To set it up, I started with <a href="https://source.cloud.google.com/">https://source.cloud.google.com/</a> and created a new
+repository. This has an option to link to GitHub or Bitbucket, but since we
+didn&rsquo;t want that, I chose &ldquo;Create new repository&rdquo;. I gave it a name (<code>zendrive</code>)
+and chose to create a new GCloud project (<code>cs-experiment</code>) as well. Since this
+was just an experiment, I didn&rsquo;t want to mess with any existing projects. You
+will need to have a credit card, despite the free quotas being very generous.
+Once the billing is setup, the repository is created and ready to be used.</p>
+<p>To add the code, I chose to push it directly from my machine instead of
+configuring Gerrit to mirror to it automatically. Now, I had to figure out a way
+to push all commits that exist on Gerrit, but not my local unsubmitted changes.
+So, I did the following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Replace the email id, project id and repo name with your own</span>
+git remote add google ssh://deepanshu@zendrive.com@source.developers.google.com:2022/p/cs-experiment-282017/r/zendrive
+git push google --tags refs/remotes/origin/*:refs/heads/*
+</code></pre></div><p>It took a few hours to index everything. But things were up and running. I went
+to settings and added a couple of people as &ldquo;Source Repository Reader&rdquo;. They
+tried it out and all looked good. Next step was to add mirroring via Gerrit.</p>
+<p>Gerrit has an excellent
+<a href="https://gerrit.googlesource.com/plugins/replication/+/refs/heads/master/src/main/resources/Documentation/about.md">replication plugin</a>.
+We already use it to mirror various repositories to our
+<a href="https://github.com/zendrive">GitHub page</a>. I logged onto the machine and added
+the following to <code>&lt;site&gt;/etc/replication.config</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[remote &#34;cs-experiment&#34;]</span>
+	<span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;repository URL&gt;
+</span><span style="color:#e6db74">	push = +refs/heads/*:refs/heads/*
+</span><span style="color:#e6db74">	push = +refs/tags/*:refs/tags/*
+</span><span style="color:#e6db74">	projects = zendrive</span>
+</code></pre></div><p>Before Gerrit is able to replicate, 2 more things need to be done. First, I got
+Gerrit&rsquo;s public key and added it to my account on GCloud. I let Gerrit authorize
+itself to GCloud as myself. But since there isn&rsquo;t any other info present, it
+wasn&rsquo;t a big deal. Next, I had to add GCloud&rsquo;s machine id to
+<code>~/.ssh/known_hosts</code> on the Gerrit machine. For that, I did</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh -p2022 deepanshu@zendrive.com@source.developers.google.com
+</code></pre></div><p>This asks for a confirmation. Say yes and it&rsquo;s done. I reloaded the replication
+plugin on gerrit, so that it picks up the above configuration by running the
+following from my local system:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh &lt;gerrit site url&gt; gerrit plugin reload replication
+</code></pre></div><p>This used my authorization and told Gerrit to read the replication config again.
+And sure enough, seconds later, newer changes started showing up on Code Search.</p>
+<p>Now that all was setup, there was just one issue. Pushing everything from my
+local machine ended up creating a remote branch name <code>HEAD</code>. This is because
+<code>HEAD</code> is supposed to be a special pointer to a branch which indicates the
+default branch to use in operations like <code>git clone</code>. This is the same pointer
+that&rsquo;s needs to updated if you want to
+<a href="https://twitter.com/mislav/status/1270388510684598272">rename the default branch</a>
+from master. On my local system <code>refs/remotes/origin/HEAD</code> pointed to
+<code>origin/master</code>. But when doing the <code>git push</code> according to the above refspec,
+it pushed this <code>HEAD</code> to <code>refs/heads/HEAD</code> on Google Cloud. This ended up
+creating a regular branch there. This confused the site about what the default
+branch for the repository is supposed to be. Once I deleted it via <code>git push google --delete HEAD</code>, everything worked beautifully.</p>
+<h2 id="productionizing-the-setup">Productionizing the setup</h2>
+<p>I was able to demo the above to a few others in the company. After validating
+that this will indeed be useful, it was time to productionize it and roll it out
+to everyone in the company. I deleted the above repo so that I could create it
+at the right place. We already have a GCloud project that is used for OAuth
+login in Gerrit. I created a new repository in the same project. I also deleted
+Gerrit&rsquo;s ssh key from my account. I reused the billing project from earlier and
+removed the &ldquo;experiment&rdquo; from it.</p>
+<p>The GCloud project is owned by a shared account - &ldquo;<a href="mailto:developers@zendrive.com">developers@zendrive.com</a>&rdquo;.
+This is done so that if any individual leaves the company, they don&rsquo;t have to
+struggle to figure out all the resources they own and pass it along. I added
+Gerrit&rsquo;s ssh key <code>id_rsa.pub</code> to the developers account. Everything was almost
+done. The last thing I needed was to update the replication config again.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[remote &#34;codesearch&#34;]</span>
+	<span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;updated repository URL&gt;
+</span><span style="color:#e6db74">	push = +refs/heads/*:refs/heads/*
+</span><span style="color:#e6db74">	push = +refs/tags/*:refs/tags/*
+</span><span style="color:#e6db74">	projects = zendrive
+</span><span style="color:#e6db74">    mirror = true
+</span><span style="color:#e6db74">    authGroup = &lt;group&gt;</span>
+</code></pre></div><p>A few things of note here:</p>
+<ol>
+<li>I added the <code>mirror = true</code> attribute to indicate that branch deletions
+should be replicated.</li>
+<li>I also added an <code>authGroup</code> attribute. This restricts the branches mirrored
+to be the ones that everyone in that group could see. Hence, any protected
+and private branches were not mirrored.</li>
+</ol>
+<p>And voila, we have an amazing code search tool built on top of Gerrit now.</p>
+<figure>
+    <img src="code-search-announce.gif"
+         alt="Code Search announce"/> <figcaption>
+            <p>Announcement of the launch</p>
+        </figcaption>
+</figure>
+
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+      <h3>See also in Gerrit</h3>
+      <nav>
+        <ul>
+        
+        
+          
+        
+          
+            <li>
+              <a href="https://medium.com/zendrive-tech/the-stumbling-blocks-of-upgrading-gerrit-e644a2c3ef72?source=friends_link&amp;sk=9c7e1d595e787b341f840bb7102f3da0">The stumbling blocks involved with upgrading Gerrit</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+</section>
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+        2020
+         Deepanshu Gupta 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-172509427-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    
+
+  </body>
+
+</html>
