@@ -17,27 +17,25 @@
       <pubDate>Fri, 10 Jul 2020 10:59:09 +0530</pubDate>
       
       <guid>https://deepanshu.dev/2020/07/gerrit-code-search/</guid>
-      <description>Photo by Annie Spratt from Unsplash
-  Gerrit is a great code review tool. I find it much better than GitHub. Many don&amp;rsquo;t like Gerrit because they&amp;rsquo;ve only ever experienced it with AOSP and find it hard to work with the repo tool, not necessarily Gerrit itself.
-Gerrit has a great and well documented API surface. It has enabled a large ecosystem of plugins with plenty of integrations with third parties.</description>
+      <description>How we integrated Google Code Search with Gerrit</description>
     </item>
     
     <item>
       <title>To face insurmountable work, smile (An interview)</title>
-      <link>https://deepanshu.dev/2020/04/vaibhav-interview/</link>
+      <link>https://link.medium.com/5oLp5VL5Z7</link>
       <pubDate>Tue, 07 Apr 2020 10:59:09 +0530</pubDate>
       
       <guid>https://deepanshu.dev/2020/04/vaibhav-interview/</guid>
-      <description></description>
+      <description>An interview with Deepanshu Gupta, by Vaibhav Gupta</description>
     </item>
     
     <item>
       <title>The stumbling blocks involved with upgrading Gerrit</title>
-      <link>https://deepanshu.dev/2019/11/gerrit-upgrade/</link>
+      <link>https://medium.com/zendrive-tech/the-stumbling-blocks-of-upgrading-gerrit-e644a2c3ef72?source=friends_link&amp;sk=9c7e1d595e787b341f840bb7102f3da0</link>
       <pubDate>Tue, 26 Nov 2019 12:58:39 +0530</pubDate>
       
       <guid>https://deepanshu.dev/2019/11/gerrit-upgrade/</guid>
-      <description></description>
+      <description>Issues encountered when upgrading to Gerrit version 2.16 and how we fixed them</description>
     </item>
     
   </channel>
