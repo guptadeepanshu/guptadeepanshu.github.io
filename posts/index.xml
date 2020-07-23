@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>A better code search experience</title>
+      <title>How We Enabled a Better Code Search Experience on Top of Gerrit</title>
       <link>https://deepanshu.dev/2020/07/gerrit-code-search/</link>
       <pubDate>Fri, 10 Jul 2020 10:59:09 +0530</pubDate>
       
       <guid>https://deepanshu.dev/2020/07/gerrit-code-search/</guid>
-      <description>How we integrated Google Code Search with Gerrit</description>
+      <description>Gerrit + Google Cloud Source Repository</description>
     </item>
     
     <item>
